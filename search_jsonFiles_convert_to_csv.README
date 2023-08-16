@@ -1,0 +1,14 @@
+This python code was created for searching the contents of files for a text string. It was initially created
+to search a whole directory of .json files scraped from court data web sites for case names or other strings
+contained in the .json files. If a file contains the string of interest, convert and append the .json contents 
+to a .csv file. Basically compile all the contents of interest from multiple .json files into a single .csv file 
+
+  + Search a user-defined path for files of a certain type for a text string
+  + Kick out a file (filelist.txt) with the list of filenames that have the search string of interest in them. 
+    - If the file exists, append to it; if no file, create it. 
+    - Drops this file in the user entered path.
+  + if search string present
+    - run the .json-to-.csv conversion  
+    - append contents of json file to a single csv file. 
+    - If the file exists, append to it; if no file, create it. 
+  + It drops this file in the user entered path.
